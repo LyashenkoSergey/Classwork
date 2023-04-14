@@ -1,3 +1,3 @@
 # Classwork
 for classwork
-работа в классе
+Snake - игра змейка на C++
