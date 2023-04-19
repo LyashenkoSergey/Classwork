@@ -21,6 +21,12 @@ int** createSnake(int size) {
 
 void render(char** field, int** snake, int* fruit) {
 	system("cls");
+	int sizeField = _msize(field) / sizeof(field[0]);
+	for (int i = 0; i < sizeField; i++) {
+		for (int j = 0; j < sizeField; j++) {
+			field[i][j] = '~';
+		}
+	}
 	for (int i = 0; i < MARGIN; i++) {
 		cout << endl;
 	}
@@ -59,6 +65,70 @@ void setPosition(int* fruit, int y, int x) {
 	fruit[1] = x;
 }
 
+void step(int**& snake, char side) {
+	int size = _msize(snake) / sizeof(snake[0]);
+	switch (side){
+	case 'w':
+		if (snake[0][0] - 1 != snake[1][0] && ) {
+			for (int i = size - 1; i > 0; i--) {
+				swap(snake[i], snake[i - 1]);
+			}
+			if (snake[1][0] == 0) {
+				snake[0][0] = SIZE_FIELD - 1; //y
+			}
+			else {
+				snake[0][0] = snake[1][0] - 1; //y
+				snake[0][1] = snake[1][1]; //x
+			}
+		}
+	break;
+
+	case 'a':
+		for (int i = size - 1; i > 0; i--) {
+			swap(snake[i], snake[i - 1]);
+		}
+		if (snake[1][1] == 0) {
+			snake[0][1] = SIZE_FIELD - 1; //y
+		}
+		else {
+			snake[0][1] = snake[1][1]-1 ; //y
+			snake[0][0] = snake[1][0]; //x
+		}
+		break;
+	case 'd':
+		for (int i = size - 1; i > 0; i--) {
+			swap(snake[i], snake[i - 1]);
+		}
+		if (snake[1][1] == SIZE_FIELD - 1) {
+			snake[0][1] = 0; //y
+		}
+		else {
+			snake[0][1] = snake[1][1]+1; //x
+			snake[0][0] = snake[1][0]; //y
+		}
+		break;
+	case 's':
+		if (!snake[])
+		for (int i = size - 1; i > 0; i--) {
+			swap(snake[i], snake[i - 1]);
+		}
+		if (snake[1][0] == SIZE_FIELD - 1) {
+			snake[0][0] = 0; //y
+		}
+		else {
+			snake[0][0] = snake[1][0]+1; //y
+			snake[0][1] = snake[1][1]; //x
+		}
+		break;
+
+
+
+
+	default:
+		break;
+	}
+}
+
 int main() {
 	srand(time(NULL));
 	//создание объектов
@@ -71,7 +141,16 @@ int main() {
 
 	//отрисовка
 	render(field, snake, fruit);
+	char s;
+	
+	while (true) {
+		cin >> s;
+		step(snake, s);
+		render(field, snake, fruit);
 
+	}
+		
+		
 
 }
 
