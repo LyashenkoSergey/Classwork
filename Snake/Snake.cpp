@@ -65,11 +65,19 @@ void setPosition(int* fruit, int y, int x) {
 	fruit[1] = x;
 }
 
+bool unions(int** snake, int* fruit) {
+	int size = _msize(snake) / sizeof(snake[0]);
+	for (int i = 0; i < size; i++){
+		if (snake[i][0] == fruit[0] && snake[i][1] == fruit[1])
+			return false;
+	}
+}
+
 void step(int**& snake, char side) {
 	int size = _msize(snake) / sizeof(snake[0]);
 	switch (side){
 	case 'w':
-		if (snake[0][0] - 1 != snake[1][0] && ) {
+		if (snake[0][0] - 1 != snake[1][0]) {
 			for (int i = size - 1; i > 0; i--) {
 				swap(snake[i], snake[i - 1]);
 			}
@@ -84,40 +92,45 @@ void step(int**& snake, char side) {
 	break;
 
 	case 'a':
-		for (int i = size - 1; i > 0; i--) {
-			swap(snake[i], snake[i - 1]);
-		}
-		if (snake[1][1] == 0) {
-			snake[0][1] = SIZE_FIELD - 1; //y
-		}
-		else {
-			snake[0][1] = snake[1][1]-1 ; //y
-			snake[0][0] = snake[1][0]; //x
+		if (snake[0][1] - 1 != snake[1][1]) {
+			for (int i = size - 1; i > 0; i--) {
+				swap(snake[i], snake[i - 1]);
+			}
+			if (snake[1][1] == 0) {
+				snake[0][1] = SIZE_FIELD - 1; //y
+			}
+			else {
+				snake[0][1] = snake[1][1] - 1; //y
+				snake[0][0] = snake[1][0]; //x
+			}
 		}
 		break;
 	case 'd':
-		for (int i = size - 1; i > 0; i--) {
-			swap(snake[i], snake[i - 1]);
-		}
-		if (snake[1][1] == SIZE_FIELD - 1) {
-			snake[0][1] = 0; //y
-		}
-		else {
-			snake[0][1] = snake[1][1]+1; //x
-			snake[0][0] = snake[1][0]; //y
+		if (snake[0][1] + 1 != snake[1][1]) {
+			for (int i = size - 1; i > 0; i--) {
+				swap(snake[i], snake[i - 1]);
+			}
+			if (snake[1][1] == SIZE_FIELD - 1) {
+				snake[0][1] = 0; //y
+			}
+			else {
+				snake[0][1] = snake[1][1] + 1; //x
+				snake[0][0] = snake[1][0]; //y
+			}
 		}
 		break;
 	case 's':
-		if (!snake[])
-		for (int i = size - 1; i > 0; i--) {
-			swap(snake[i], snake[i - 1]);
-		}
-		if (snake[1][0] == SIZE_FIELD - 1) {
-			snake[0][0] = 0; //y
-		}
-		else {
-			snake[0][0] = snake[1][0]+1; //y
-			snake[0][1] = snake[1][1]; //x
+		if (snake[0][0] + 1 != snake[1][0]) {
+			for (int i = size - 1; i > 0; i--) {
+				swap(snake[i], snake[i - 1]);
+			}
+			if (snake[1][0] == SIZE_FIELD - 1) {
+				snake[0][0] = 0; //y
+			}
+			else {
+				snake[0][0] = snake[1][0] + 1; //y
+				snake[0][1] = snake[1][1]; //x
+			}
 		}
 		break;
 
@@ -129,6 +142,28 @@ void step(int**& snake, char side) {
 	}
 }
 
+bool eat(int**& snake, int* fruit) {
+	int size = _msize(snake) / sizeof(snake[0]);
+	if (!unions(snake, fruit)) {
+		int** buf = new int* [size + 1];
+		for (int i = 0; i < size + 1; i++) {
+			buf[i] = new int[2];
+		}
+		buf[0][0] = fruit[0];
+		buf[0][1] = fruit[1];
+		for (int i = 0; i < size; i++) {
+			for (int j = 0; j < 2; j++) {
+				buf[i + 1][j] = snake[i][j];
+			}
+		}
+		delete[] snake;
+		snake = buf;
+		return true;
+	}
+	else return false;
+}
+
+
 int main() {
 	srand(time(NULL));
 	//создание объектов
@@ -137,7 +172,9 @@ int main() {
 	int* fruit = new int[2];
 	//выставление первоначальных позиций
 	setPosition(snake, SIZE_FIELD / 2, SIZE_FIELD / 2);
-	setPosition(fruit, random(0, SIZE_FIELD - 1), random(0, SIZE_FIELD - 1));
+	do {
+		setPosition(fruit, random(0, SIZE_FIELD - 1), random(0, SIZE_FIELD - 1));
+	} while (!unions(snake, fruit));
 
 	//отрисовка
 	render(field, snake, fruit);
@@ -146,6 +183,12 @@ int main() {
 	while (true) {
 		cin >> s;
 		step(snake, s);
+		if (eat(snake, fruit)) {
+			do {
+				setPosition(fruit, random(0, SIZE_FIELD - 1), random(0, SIZE_FIELD - 1));
+			} while (!unions(snake, fruit));
+		}
+	
 		render(field, snake, fruit);
 
 	}
