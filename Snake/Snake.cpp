@@ -106,7 +106,7 @@ bool eat(int**& snake, int* fruit, int* oldTail) {
 	return false;
 }
 
-int* step(int** snake, char side, char& oldS) {
+int* step(int** snake, char& side, char& oldS) {
 	int size = _msize(snake) / sizeof(snake[0]);
 	int* oldTail = new int[2]{ snake[size - 1][0],snake[size - 1][1] };
 	if (oldS == 'w' && side == 's' || 
@@ -169,6 +169,9 @@ int* step(int** snake, char side, char& oldS) {
 			snake[0][0] = snake[1][0]; //y
 
 		
+		break;
+	default:
+		side = oldS;
 		break;
 	}
 	oldS = side;
