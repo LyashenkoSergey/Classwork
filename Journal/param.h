@@ -13,4 +13,10 @@ using namespace std;
 class Student;
 class Book;
 
+
+string* readFile(string path);
+void writeFile(string* array, string path);
+string* splice(string str, char s);
+void showArray(string* array);
+
 string pathClasses = "./Class.txt";

@@ -1,6 +1,8 @@
 #pragma once
 #include <iostream>
+#include <string>
 using namespace std;
+#include "iofiles.h"
 
 class Student {
 	int id;
@@ -13,5 +15,5 @@ class Student {
 	int resultYear = 0;
 public:
 	Student(string str);
-
+	void showInfo();
 };

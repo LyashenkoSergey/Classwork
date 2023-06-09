@@ -1,9 +1,5 @@
 #pragma once
-
-string* readFile(string path);
-void writeFile(string* array, string path);
-string* splice(string str, char s);
-void showArray(string* array);
+#include "param.h"
 
 int countline(string path) {
     ifstream in(path);
