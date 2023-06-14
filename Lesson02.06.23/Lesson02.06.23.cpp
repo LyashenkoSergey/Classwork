@@ -153,7 +153,14 @@ public:
             employees[i].showInfo();
         }
     }
+    ~Otdel() {
+        delete[] employees;
+    }
 };
+
+
+
+
 
 int main() {
 
