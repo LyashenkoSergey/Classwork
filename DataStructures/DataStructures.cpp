@@ -269,13 +269,25 @@ int main()
     stack1.pop();
     cout << stack1.top() << endl;*/
     List<int> list;
-    list.push(2);
-    list.push(5);
-    list.push(6);
-    list.push(9);
-    list.push(23);
-    list.push(43);
-    list.push(324);
-    list.push(4);
+    list.push_front(2);
     list.show();
+    /*cout << endl;
+    list.push_front(5);
+    list.show();
+    cout << endl;
+    list.push_front(6);
+    list.show();
+    cout << endl;
+    list.push_back(9);
+    list.show();
+    cout << endl;
+    list.push_back(23);
+    list.show();
+    cout << endl;
+    list.insert(43,2);
+    list.show();
+    cout << endl;
+    list.insert(324,2);
+    list.show();
+    cout << endl;*/
 }
