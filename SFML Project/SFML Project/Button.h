@@ -2,6 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include "config.h"
 
+
 class Button
 {
 private:
@@ -10,6 +11,8 @@ private:
 	sf::Text text;
 	sf::Vector2f position;
 	sf::Vector2f size;
+	int fontSize;
+	sf::Color colorFont;
 
 public:
 
@@ -17,6 +20,10 @@ public:
 	void render(sf::RenderWindow &window);
 	void setText(std::string str);
 	void changeBackColor(sf::Color colorBack);
+	void setFontColor(sf::Color color);
+	sf::RectangleShape& getRectangle();
+	sf::Color getFontColor();
+	sf::Color getBackColor();
 	
 
 };

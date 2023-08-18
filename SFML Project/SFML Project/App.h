@@ -12,6 +12,9 @@ private:
 	std::vector <Button> keyboard;
 	std::string symbols[20]{ "AC","+/-","%","+","7","8","9","*","4","5","6","-","1","2","3","+","C","0",".","=" };
 
+	sf::Font font;
+	sf::Text text;
+	std::string str = "0";
 
 public:
 	App();
@@ -20,6 +23,7 @@ private:
 	void processEvents();
 	void update();
 	void render();
+	void setStr(std::string text);
 
 
 
