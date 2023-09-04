@@ -1,5 +1,5 @@
 #include "Element.h"
 
-Element::Element(std::string name, std::string type, std::string path)
+Element::Element(std::string name, std::string path, std::string type)
 {
 }

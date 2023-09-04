@@ -139,9 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="Button.cpp" />
     <ClCompile Include="Element.cpp" />
+    <ClCompile Include="Field.cpp" />
     <ClCompile Include="FileManadger.cpp" />
-    <ClCompile Include="ManadgerApp.cpp" />
+    <ClCompile Include="InputField.cpp" />
     <ClCompile Include="NavWindow.cpp" />
     <ClCompile Include="UI.cpp" />
   </ItemGroup>
@@ -150,9 +153,12 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="App.h" />
+    <ClInclude Include="Button.h" />
     <ClInclude Include="config.h" />
     <ClInclude Include="Element.h" />
-    <ClInclude Include="ManadgerApp.h" />
+    <ClInclude Include="Field.h" />
+    <ClInclude Include="InputField.h" />
     <ClInclude Include="NavWindow.h" />
     <ClInclude Include="UI.h" />
   </ItemGroup>

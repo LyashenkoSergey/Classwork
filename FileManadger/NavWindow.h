@@ -1,18 +1,34 @@
 #pragma once
-#include "config.h"
-
-
-
+#include <SFML/Graphics.hpp>
+#include "Field.h"
+#include "InputField.h"
+#include <vector>
 class NavWindow
 {
-private:
-	Element* activeElement=nullptr;
-	std::vector <Element> elements;
+	Field* activeField = nullptr;
+	std::string newPath = "";
+	std::string activeText = "";
+	std::vector<Field> fields;
+
+	sf::RectangleShape rectangle;
+	sf::Font font;
+	sf::Text text;
+	sf::Vector2f position;
+	sf::Vector2f size;
+	int fontSize;
+
+	InputField inputField;
+
 
 public:
-	void removeElement();
-	void addElement(Element element);
-
+	NavWindow(sf::Vector2f position, sf::Vector2f size);
+	void render(sf::RenderWindow& window);
+	void removeField();
+	void addField(Field field);
+	void processEvent(sf::Event event, sf::RenderWindow& window);
+	Field* getActiveField();
+	void createFields(std::vector<std::string>& fieldTexts);
+	void updateFields();
+	//void updateField();
 
 };
-

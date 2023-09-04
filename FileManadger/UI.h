@@ -4,7 +4,7 @@
 class UI
 {
 private:
-	std::string  fields[];
+	std::string fields[];
 
 public:
 	void push();
