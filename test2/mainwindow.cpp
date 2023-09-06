@@ -2,108 +2,129 @@
 #include "ui_mainwindow.h"
 #include <QString>
 
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
+    operation="";
     ui->setupUi(this);
+    connect(ui->pushButton_0,SIGNAL(clicked()),this,SLOT(getDigit()));
+    connect(ui->pushButton_1,SIGNAL(clicked()),this,SLOT(getDigit()));
+    connect(ui->pushButton_2,SIGNAL(clicked()),this,SLOT(getDigit()));
+    connect(ui->pushButton_3,SIGNAL(clicked()),this,SLOT(getDigit()));
+    connect(ui->pushButton_4,SIGNAL(clicked()),this,SLOT(getDigit()));
+    connect(ui->pushButton_5,SIGNAL(clicked()),this,SLOT(getDigit()));
+    connect(ui->pushButton_6,SIGNAL(clicked()),this,SLOT(getDigit()));
+    connect(ui->pushButton_7,SIGNAL(clicked()),this,SLOT(getDigit()));
+    connect(ui->pushButton_8,SIGNAL(clicked()),this,SLOT(getDigit()));
+    connect(ui->pushButton_9,SIGNAL(clicked()),this,SLOT(getDigit()));
+    connect(ui->pushButton_C,SIGNAL(clicked()),this,SLOT(clearResult()));
+    connect(ui->pushButton_Devision,SIGNAL(clicked()),this,SLOT(chekOperation()));
+    connect(ui->pushButton_Multi,SIGNAL(clicked()),this,SLOT(chekOperation()));
+    connect(ui->pushButton_Plus,SIGNAL(clicked()),this,SLOT(chekOperation()));
+    connect(ui->pushButton_Minus,SIGNAL(clicked()),this,SLOT(chekOperation()));
+    connect(ui->pushButton_Equals,SIGNAL(clicked()),this,SLOT(getResult()));
+    connect(ui->pushButton_Dot,SIGNAL(clicked()),this,SLOT(addDot()));
+    connect(ui->pushButton_sqrt,SIGNAL(clicked()),this,SLOT(getSqrt()));
+    connect(ui->pushButton_qrt,SIGNAL(clicked()),this,SLOT(getQrt()));
 }
 
 MainWindow::~MainWindow()
 {
+    ui->label_3->setText("0");
     delete ui;
 }
 
-QString str=nullptr;
-int data1=0, data2=0;
-int result=0;
-
-
-void MainWindow::on_pushButton_C_clicked()
+void MainWindow::getDigit()
 {
-    result=0;
+    QPushButton* btn=(QPushButton*)sender();
+    if(ui->label_3->text()=="0"){
+        if(btn->text()!=0){
+           ui->label_3->setText("");
+        }
+    }
+    QString field=ui->label_3->text() + btn->text();
+    ui->label_3->setText(field);
+}
+
+void MainWindow::clearResult()
+{
+    ui->label_3->setText("0");
+    operation="";
+}
+
+void MainWindow::chekOperation()
+{
+    QPushButton* btn=(QPushButton*)sender();
+    operation=btn->text();
+    prev=ui->label_3->text();
+    ui->label_3->setText("0");
+}
+
+void MainWindow::getResult()
+{
+    float num1=prev.toFloat();
+    float num2=ui->label_3->text().toFloat();
+    float result;
+    switch ((char)(operation[0].toLatin1())){
+    case '+':
+        result=num1+num2;
+    break;
+    case '-':
+         result=num1-num2;
+    break;
+    case '*':
+         result=num1*num2;
+    break;
+    case '/':
+         result=num1/num2;
+    break;
+
+    }
     ui->label_3->setNum(result);
 }
 
+//void MainWindow::addDot()
+//{
+//   QPushButton* btn=(QPushButton*)sender();
+//   if(ui->label_3->text()=="0"){
+
+//       QString field=ui->label_3->text() + btn->text();
+//       ui->label_3->setText(field);
+//        }
+//   else{
+//       QString field=ui->label_3->text() + btn->text();
+//       ui->label_3->setText(field);
+//    }
 
 
-void MainWindow::on_pushButton_0_clicked()
+//}
+
+void MainWindow::getSqrt()
 {
-    if(str!=nullptr){
-        str.push_back("0");
-         ui->label_3->setText(str);
-    }
-    else{
-        str.push_back(",");
-        str.push_back("0");
-        ui->label_3->setText(str);
-    }
+    float num1=ui->label_3->text().toFloat();
+    float result;
+    result=pow(num1,2);
+    ui->label_3->setNum(result);
+}
+
+void MainWindow::Qrt()
+{
+    float num1=ui->label_3->text().toFloat();
+    float result;
+    result=pow(num1,2);
+    ui->label_3->setNum(result);
+
 }
 
 
-void MainWindow::on_pushButton_1_clicked()
-{
-    str.push_back("1");
-     ui->label_3->setText(str);
-}
-
-void MainWindow::on_pushButton_2_clicked()
-{
-    str.push_back("2");
-     ui->label_3->setText(str);
-}
-
-void MainWindow::on_pushButton_3_clicked()
-{
-    str.push_back("3");
-     ui->label_3->setText(str);
-}
-
-void MainWindow::on_pushButton_4_clicked()
-{
-    str.push_back("4");
-     ui->label_3->setText(str);
-}
 
 
-void MainWindow::on_pushButton_5_clicked()
-{
-    str.push_back("5");
-     ui->label_3->setText(str);
-}
 
 
-void MainWindow::on_pushButton_6_clicked()
-{
-    str.push_back("6");
-     ui->label_3->setText(str);
-}
 
 
-void MainWindow::on_pushButton_7_clicked()
-{
-    str.push_back("7");
-     ui->label_3->setText(str);
-}
 
 
-void MainWindow::on_pushButton_8_clicked()
-{
-    str.push_back("8");
-     ui->label_3->setText(str);
-}
-
-
-void MainWindow::on_pushButton_9_clicked()
-{
-    str.push_back("9");
-     ui->label_3->setText(str);
-}
-
-
-void MainWindow::on_pushButton_Del_clicked()
-{
-    str.back();
-     ui->label_3->setText(str);
-}
 
