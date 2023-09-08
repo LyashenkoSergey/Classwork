@@ -46,7 +46,7 @@ public:
     QPushButton *pushButton_0;
     QPushButton *pushButton_Dot;
     QPushButton *pushButton_sqrt;
-    QPushButton *pushButton_sqrt_2;
+    QPushButton *pushButton_qrt;
     QMenuBar *menubar;
     QMenu *menuCalculator;
     QStatusBar *statusbar;
@@ -138,9 +138,9 @@ public:
         pushButton_sqrt = new QPushButton(centralwidget);
         pushButton_sqrt->setObjectName(QString::fromUtf8("pushButton_sqrt"));
         pushButton_sqrt->setGeometry(QRect(320, 270, 51, 31));
-        pushButton_sqrt_2 = new QPushButton(centralwidget);
-        pushButton_sqrt_2->setObjectName(QString::fromUtf8("pushButton_sqrt_2"));
-        pushButton_sqrt_2->setGeometry(QRect(320, 230, 51, 31));
+        pushButton_qrt = new QPushButton(centralwidget);
+        pushButton_qrt->setObjectName(QString::fromUtf8("pushButton_qrt"));
+        pushButton_qrt->setGeometry(QRect(320, 230, 51, 31));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -182,7 +182,7 @@ public:
         pushButton_0->setText(QApplication::translate("MainWindow", "0", nullptr));
         pushButton_Dot->setText(QApplication::translate("MainWindow", ",", nullptr));
         pushButton_sqrt->setText(QApplication::translate("MainWindow", "sqrt", nullptr));
-        pushButton_sqrt_2->setText(QApplication::translate("MainWindow", "qrt", nullptr));
+        pushButton_qrt->setText(QApplication::translate("MainWindow", "qrt", nullptr));
         menuCalculator->setTitle(QApplication::translate("MainWindow", "Calculator", nullptr));
     } // retranslateUi
 

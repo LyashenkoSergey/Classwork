@@ -113,7 +113,7 @@ void MainWindow::Qrt()
 {
     float num1=ui->label_3->text().toFloat();
     float result;
-    result=pow(num1,2);
+    result=sqrt(num1);
     ui->label_3->setNum(result);
 
 }
