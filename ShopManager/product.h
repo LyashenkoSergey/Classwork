@@ -10,14 +10,17 @@ private:
     QString name;
     QString category;
     float price;
+
 public:
     Product();
-    const QString &getName() const;
-    void setName(const QString &newName);
-    const QString &getCategory() const;
-    void setCategory(const QString &newCategory);
+    Product(const QString &name, const QString &category, float price);
+    const QString& getName() const;
+    void setName(const QString &value);
+    QString getCategory() const;
+    void setCategory(const QString &value);
     float getPrice() const;
-    void setPrice(float newPrice);
+    void setPrice(int value);
+    int getUniqId();
 
 };
 

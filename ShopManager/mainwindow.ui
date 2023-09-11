@@ -169,7 +169,7 @@ color: rgb(255, 255, 255);</string>
       <string>руб.</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="addPosition_button">
+    <widget class="QPushButton" name="addPosition_btn">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -269,7 +269,7 @@ color: rgb(255, 255, 255);</string>
       <string>Количество</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="addProduct_button">
+    <widget class="QPushButton" name="addProduct_btn">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -406,7 +406,7 @@ color: rgb(255, 255, 255);</string>
       <string>Количество</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="removeProduct_button">
+    <widget class="QPushButton" name="removeProduct_btn">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -462,25 +462,7 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
     </widget>
-    <widget class="QTextEdit" name="addPosition_name_2">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>510</y>
-       <width>431</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="addPosition_name_3">
+    <widget class="QTextEdit" name="addProduct_count">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -498,11 +480,11 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
     </widget>
-    <widget class="QTextEdit" name="addPosition_name_4">
+    <widget class="QTextEdit" name="removeProduct_count">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>850</y>
+       <y>930</y>
        <width>431</width>
        <height>31</height>
       </rect>
@@ -516,19 +498,27 @@ color: rgb(255, 255, 255);</string>
       <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
     </widget>
-    <widget class="QTextEdit" name="addPosition_name_5">
+    <widget class="QComboBox" name="addProduct_name">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>930</y>
+       <x>20</x>
+       <y>510</y>
        <width>431</width>
        <height>31</height>
       </rect>
      </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-      </font>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="removeProduct_name">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>850</y>
+       <width>431</width>
+       <height>31</height>
+      </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(255, 255, 255);</string>

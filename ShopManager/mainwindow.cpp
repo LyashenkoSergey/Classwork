@@ -6,20 +6,18 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    categorysName.insert("овощи");
-    categorysName.insert("фрукты");
-    categorysName.insert("напитки");
+    categoriesName.insert("овощи");
+    categoriesName.insert("фрукты");
+    categoriesName.insert("напитки");
 
-for(auto el: categorysName){
-    ui->addPosition_category->addItem(el);
-    ui->addProduct_category->addItem(el);
-    ui->removeProduct_category->addItem(el);
-    ui->filter_category->addItem(el);
-}
-ui->addPosition_category->setEditable(false);
-ui->addProduct_category->setEditable(false);
-ui->removeProduct_category->setEditable(false);
-ui->filter_category->setEditable(false);
+    for (auto el: this->categoriesName){
+        ui->addPosition_category->addItem(el);
+        ui->addProduct_category->addItem(el);
+        ui->removeProduct_category->addItem(el);
+        ui->filter_category->addItem(el);
+    }
+    ui->addPosition_category->setEditable(false);
+
 
 }
 
@@ -29,14 +27,70 @@ MainWindow::~MainWindow()
 }
 
 
-void MainWindow::on_addPosition_button_clicked()
+void MainWindow::on_addPosition_btn_clicked()
 {
-    Product product;
-    product.setName(ui->addPosition_name->toPlainText());
-    product.setCategory(ui->addPosition_category->currentText());
-    product.setPrice(ui->addPosition_price->toPlainText().toFloat());
+    QString name = ui->addPosition_name->toPlainText();
+    QString category = ui->addPosition_category->currentText();
+    float price = ui->addPosition_price->toPlainText().toFloat();
+    Product product(name, category, price);
+    products.insert(product.getUniqId(), product);
+    if(!productsName.contains(product.getName())){
+        productsName.insert(product.getName(),0);
+        productsUniqName.insert(product.getName(),product.getUniqId());
+    }
+    categoriesName.insert(product.getCategory());
+    updateLists();
+
+}
+
+void MainWindow::updateLists()
+{
+     ui->addPosition_category->clear();
+     ui->addProduct_category->clear();
+     ui->removeProduct_category->clear();
+     ui->filter_category->clear();
+     ui->addProduct_name->clear();
+     ui->removeProduct_name->clear();
+     ui->filter_name->clear();
+
+
+
+    for (auto el: this->categoriesName){
+        ui->addPosition_category->addItem(el);
+        ui->addProduct_category->addItem(el);
+        ui->removeProduct_category->addItem(el);
+        ui->filter_category->addItem(el);
+    }
+
+
+    for (auto el : this->productsName.keys()){
+        Product buf1=products.value(productsUniqName.value(el));
+        if(buf1.getCategory()==ui->addProduct_category->currentText())
+            ui->addProduct_name->addItem(el);
+        if (ui->removeProduct_category->currentText()==el)
+            ui->removeProduct_name->addItem(el);
+        if (ui->filter_category->currentText()==el)
+            ui->filter_name->addItem(el);
+    }
+
 
 }
 
 
+void MainWindow::on_addProduct_category_currentTextChanged(const QString &arg1)
+{
+    this->updateLists();
+}
+
+
+void MainWindow::on_removeProduct_category_currentTextChanged(const QString &arg1)
+{
+    this->updateLists();
+}
+
+
+void MainWindow::on_filter_category_currentTextChanged(const QString &arg1)
+{
+    this->updateLists();
+}
 

@@ -18,14 +18,22 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_addPosition_button_clicked();
+    void on_addPosition_btn_clicked();
+    void updateLists();
 
 
+    void on_addProduct_category_currentTextChanged(const QString &arg1);
+
+    void on_removeProduct_category_currentTextChanged(const QString &arg1);
+
+    void on_filter_category_currentTextChanged(const QString &arg1);
 
 private:
     Ui::MainWindow *ui;
     QMap <QString, int> productsName;
-    QSet <QString> categorysName;
+    QSet <QString> categoriesName;
+    QMap <QString, int> productsUniqName;
     QMap <int, Product> products;
+
 };
 #endif // MAINWINDOW_H
