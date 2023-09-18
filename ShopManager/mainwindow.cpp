@@ -18,6 +18,19 @@ MainWindow::MainWindow(QWidget *parent)
     }
     ui->addPosition_category->setEditable(false);
 
+    ui->table->setColumnCount(4);
+    QTableWidgetItem* item1=new  QTableWidgetItem("Product name");
+    QTableWidgetItem* item2=new  QTableWidgetItem("Product category");
+    QTableWidgetItem* item3=new  QTableWidgetItem("Product price");
+    QTableWidgetItem* item4=new  QTableWidgetItem("Product count");
+
+    ui->table->setHorizontalHeaderItem(0,item1);
+    ui->table->setHorizontalHeaderItem(1,item2);
+    ui->table->setHorizontalHeaderItem(2,item3);
+    ui->table->setHorizontalHeaderItem(3,item4);
+
+
+
 
 }
 
@@ -40,6 +53,7 @@ void MainWindow::on_addPosition_btn_clicked()
     }
     categoriesName.insert(product.getCategory());
     updateLists();
+    updateTable();
 
 }
 
@@ -61,36 +75,68 @@ void MainWindow::updateLists()
         ui->removeProduct_category->addItem(el);
         ui->filter_category->addItem(el);
     }
-
-
-    for (auto el : this->productsName.keys()){
-        Product buf1=products.value(productsUniqName.value(el));
-        if(buf1.getCategory()==ui->addProduct_category->currentText())
-            ui->addProduct_name->addItem(el);
-        if (ui->removeProduct_category->currentText()==el)
-            ui->removeProduct_name->addItem(el);
-        if (ui->filter_category->currentText()==el)
-            ui->filter_name->addItem(el);
-    }
-
-
 }
-
 
 void MainWindow::on_addProduct_category_currentTextChanged(const QString &arg1)
 {
-    this->updateLists();
+    ui->addProduct_name->clear();
+    for (auto el : this->productsUniqName.keys()){
+        if(products.value(productsUniqName.value(el)).getCategory()==
+               arg1)
+            ui->addProduct_name->addItem(el);
+    }
 }
 
 
 void MainWindow::on_removeProduct_category_currentTextChanged(const QString &arg1)
 {
-    this->updateLists();
+    ui->removeProduct_name->clear();
+    for (auto el : this->productsUniqName.keys()){
+        if(products.value(productsUniqName.value(el)).getCategory()==
+               arg1)
+            ui->removeProduct_name->addItem(el);
+    }
 }
 
 
 void MainWindow::on_filter_category_currentTextChanged(const QString &arg1)
 {
-    this->updateLists();
+    ui->filter_name->clear();
+    for (auto el : this->productsUniqName.keys()){
+        if(products.value(productsUniqName.value(el)).getCategory()==
+               arg1)
+            ui->filter_name->addItem(el);
+    }
+}
+
+void MainWindow::updateTable()
+{
+    ui->table->clear();
+    ui->table->setRowCount(0);
+    QTableWidgetItem* item1=new  QTableWidgetItem("Product name");
+    QTableWidgetItem* item2=new  QTableWidgetItem("Product category");
+    QTableWidgetItem* item3=new  QTableWidgetItem("Product price");
+    QTableWidgetItem* item4=new  QTableWidgetItem("Product count");
+
+
+    ui->table->setHorizontalHeaderItem(0,item1);
+    ui->table->setHorizontalHeaderItem(1,item2);
+    ui->table->setHorizontalHeaderItem(2,item3);
+    ui->table->setHorizontalHeaderItem(3,item4);
+
+    int a=0;
+    for(auto el:this->productsName.keys()){
+        QTableWidgetItem* count=new QTableWidgetItem(productsName.value(el));
+        QTableWidgetItem* name=new QTableWidgetItem(products.value(productsUniqName.value(el)).getName());
+        QTableWidgetItem* category=new QTableWidgetItem(products.value(productsUniqName.value(el)).getCategory());
+        QTableWidgetItem* price=new QTableWidgetItem(QString::number(products.value(productsUniqName.value(el)).getPrice()));
+
+       ui->table->insertRow(a);
+       ui->table->setItem(a,3,count);
+       ui->table->setItem(a,0,name);
+       ui->table->setItem(a,1,category);
+       ui->table->setItem(a,2,price);
+       a++;
+    }
 }
 

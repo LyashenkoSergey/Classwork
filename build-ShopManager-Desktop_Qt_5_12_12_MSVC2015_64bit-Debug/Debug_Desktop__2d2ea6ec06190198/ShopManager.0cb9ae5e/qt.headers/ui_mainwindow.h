@@ -20,7 +20,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QScrollArea>
 #include <QtWidgets/QStatusBar>
-#include <QtWidgets/QTableView>
+#include <QtWidgets/QTableWidget>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
@@ -64,7 +64,6 @@ public:
     QLabel *label_18;
     QLabel *outcome_field;
     QLabel *label_20;
-    QTableView *table;
     QLabel *label_21;
     QScrollArea *scrollArea;
     QWidget *scrollAreaWidgetContents;
@@ -72,6 +71,7 @@ public:
     QComboBox *filter_name;
     QLabel *label_22;
     QLabel *label_23;
+    QTableWidget *table;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -279,15 +279,6 @@ public:
         label_20->setFont(font1);
         label_20->setStyleSheet(QString::fromUtf8("\n"
 "color: rgb(72, 72, 72);"));
-        table = new QTableView(frame_2);
-        table->setObjectName(QString::fromUtf8("table"));
-        table->setGeometry(QRect(40, 210, 1351, 511));
-        table->setContextMenuPolicy(Qt::DefaultContextMenu);
-        table->setFrameShape(QFrame::StyledPanel);
-        table->setFrameShadow(QFrame::Sunken);
-        table->setSelectionMode(QAbstractItemView::ExtendedSelection);
-        table->setSelectionBehavior(QAbstractItemView::SelectItems);
-        table->horizontalHeader()->setCascadingSectionResizes(false);
         label_21 = new QLabel(frame_2);
         label_21->setObjectName(QString::fromUtf8("label_21"));
         label_21->setGeometry(QRect(40, 740, 121, 31));
@@ -322,6 +313,9 @@ public:
         label_23->setFont(font1);
         label_23->setStyleSheet(QString::fromUtf8("\n"
 "color: rgb(72, 72, 72);"));
+        table = new QTableWidget(frame_2);
+        table->setObjectName(QString::fromUtf8("table"));
+        table->setGeometry(QRect(40, 210, 1091, 561));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
