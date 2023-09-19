@@ -1,0 +1,9 @@
+/Users/sergey/Documents/Github/Classwork/build-X0-Qt_6_5_2_for_macOS-Debug/CMakeFiles/X0.dir
+/Users/sergey/Documents/Github/Classwork/build-X0-Qt_6_5_2_for_macOS-Debug/CMakeFiles/edit_cache.dir
+/Users/sergey/Documents/Github/Classwork/build-X0-Qt_6_5_2_for_macOS-Debug/CMakeFiles/rebuild_cache.dir
+/Users/sergey/Documents/Github/Classwork/build-X0-Qt_6_5_2_for_macOS-Debug/CMakeFiles/list_install_components.dir
+/Users/sergey/Documents/Github/Classwork/build-X0-Qt_6_5_2_for_macOS-Debug/CMakeFiles/install.dir
+/Users/sergey/Documents/Github/Classwork/build-X0-Qt_6_5_2_for_macOS-Debug/CMakeFiles/install/local.dir
+/Users/sergey/Documents/Github/Classwork/build-X0-Qt_6_5_2_for_macOS-Debug/CMakeFiles/install/strip.dir
+/Users/sergey/Documents/Github/Classwork/build-X0-Qt_6_5_2_for_macOS-Debug/CMakeFiles/X0_autogen_timestamp_deps.dir
+/Users/sergey/Documents/Github/Classwork/build-X0-Qt_6_5_2_for_macOS-Debug/CMakeFiles/X0_autogen.dir

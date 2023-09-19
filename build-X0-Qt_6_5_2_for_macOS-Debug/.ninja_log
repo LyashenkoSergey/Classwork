@@ -1,0 +1,21 @@
+# ninja log v5
+62	88	1694849216418641287	/Users/sergey/Documents/Github/Classwork/build-X0-Qt_6_5_2_for_macOS-Debug/X0_autogen/EWIEGA46WW/qrc_resourses.cpp	b93f07cbb15521eb
+998	1144	1695019280116087862	X0.app/Contents/MacOS/X0	d77eb0d704ef5d1b
+62	88	1694849216418641287	X0_autogen/EWIEGA46WW/qrc_resourses.cpp	b93f07cbb15521eb
+7	35	1695104338721853925	/Users/sergey/Documents/Github/Classwork/build-X0-Qt_6_5_2_for_macOS-Debug/X0_autogen/mocs_compilation.cpp	6896e1a963d104a0
+353	998	1695019279967702623	CMakeFiles/X0.dir/mainwindow.cpp.o	df6190fd1cdd03df
+88	332	1694849216660329422	CMakeFiles/X0.dir/X0_autogen/EWIEGA46WW/qrc_resourses.cpp.o	641f0f123022183c
+7	35	1695104338721853925	/Users/sergey/Documents/Github/Classwork/build-X0-Qt_6_5_2_for_macOS-Debug/X0_autogen/timestamp	6896e1a963d104a0
+352	939	1695019279909177249	CMakeFiles/X0.dir/main.cpp.o	16156f7864754ab7
+374	1167	1695104272580070489	CMakeFiles/X0.dir/X0_autogen/mocs_compilation.cpp.o	23a1be27da5ef585
+7	35	1695104338721853925	X0_autogen/mocs_compilation.cpp	6896e1a963d104a0
+7	35	1695104338721853925	X0_autogen/timestamp	6896e1a963d104a0
+6	36	1695104407186687852	X0_autogen/timestamp	6896e1a963d104a0
+6	36	1695104407186687852	X0_autogen/mocs_compilation.cpp	6896e1a963d104a0
+6	36	1695104407186687852	/Users/sergey/Documents/Github/Classwork/build-X0-Qt_6_5_2_for_macOS-Debug/X0_autogen/timestamp	6896e1a963d104a0
+6	36	1695104407186687852	/Users/sergey/Documents/Github/Classwork/build-X0-Qt_6_5_2_for_macOS-Debug/X0_autogen/mocs_compilation.cpp	6896e1a963d104a0
+7	351	1695104544592236000	X0_autogen/timestamp	6896e1a963d104a0
+7	351	1695104544592236000	X0_autogen/mocs_compilation.cpp	6896e1a963d104a0
+7	351	1695104544592236000	/Users/sergey/Documents/Github/Classwork/build-X0-Qt_6_5_2_for_macOS-Debug/X0_autogen/timestamp	6896e1a963d104a0
+7	351	1695104544592236000	/Users/sergey/Documents/Github/Classwork/build-X0-Qt_6_5_2_for_macOS-Debug/X0_autogen/mocs_compilation.cpp	6896e1a963d104a0
+351	922	1695104545166670745	CMakeFiles/X0.dir/X0_autogen/mocs_compilation.cpp.o	23a1be27da5ef585
