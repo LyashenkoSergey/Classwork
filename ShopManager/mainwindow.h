@@ -30,6 +30,12 @@ private slots:
 
 
 
+    void on_addProduct_btn_clicked();
+
+    void on_removeProduct_btn_clicked();
+
+    void on_sellButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     QMap <QString, int> productsName; //Навание и кол-во

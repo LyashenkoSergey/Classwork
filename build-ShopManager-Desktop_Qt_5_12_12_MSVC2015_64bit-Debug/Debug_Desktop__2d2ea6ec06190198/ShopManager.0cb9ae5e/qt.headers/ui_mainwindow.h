@@ -15,10 +15,10 @@
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QScrollArea>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTableWidget>
 #include <QtWidgets/QTextEdit>
@@ -65,13 +65,12 @@ public:
     QLabel *outcome_field;
     QLabel *label_20;
     QLabel *label_21;
-    QScrollArea *scrollArea;
-    QWidget *scrollAreaWidgetContents;
     QComboBox *filter_category;
-    QComboBox *filter_name;
     QLabel *label_22;
-    QLabel *label_23;
     QTableWidget *table;
+    QPushButton *sellButton;
+    QListWidget *listWidget;
+    QLabel *label_15;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -285,37 +284,32 @@ public:
         label_21->setFont(font1);
         label_21->setStyleSheet(QString::fromUtf8("\n"
 "color: rgb(72, 72, 72);"));
-        scrollArea = new QScrollArea(frame_2);
-        scrollArea->setObjectName(QString::fromUtf8("scrollArea"));
-        scrollArea->setGeometry(QRect(40, 790, 721, 241));
-        scrollArea->setWidgetResizable(true);
-        scrollAreaWidgetContents = new QWidget();
-        scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 719, 239));
-        scrollArea->setWidget(scrollAreaWidgetContents);
         filter_category = new QComboBox(frame_2);
         filter_category->setObjectName(QString::fromUtf8("filter_category"));
         filter_category->setGeometry(QRect(150, 140, 251, 31));
         filter_category->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
-        filter_name = new QComboBox(frame_2);
-        filter_name->setObjectName(QString::fromUtf8("filter_name"));
-        filter_name->setGeometry(QRect(610, 140, 251, 31));
-        filter_name->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         label_22 = new QLabel(frame_2);
         label_22->setObjectName(QString::fromUtf8("label_22"));
         label_22->setGeometry(QRect(40, 140, 81, 31));
         label_22->setFont(font1);
         label_22->setStyleSheet(QString::fromUtf8("\n"
 "color: rgb(72, 72, 72);"));
-        label_23 = new QLabel(frame_2);
-        label_23->setObjectName(QString::fromUtf8("label_23"));
-        label_23->setGeometry(QRect(480, 140, 71, 31));
-        label_23->setFont(font1);
-        label_23->setStyleSheet(QString::fromUtf8("\n"
-"color: rgb(72, 72, 72);"));
         table = new QTableWidget(frame_2);
         table->setObjectName(QString::fromUtf8("table"));
         table->setGeometry(QRect(40, 210, 1091, 561));
+        sellButton = new QPushButton(frame_2);
+        sellButton->setObjectName(QString::fromUtf8("sellButton"));
+        sellButton->setGeometry(QRect(1160, 210, 151, 51));
+        sellButton->setFont(font);
+        sellButton->setStyleSheet(QString::fromUtf8("\n"
+"color: rgb(57, 57, 57);"));
+        listWidget = new QListWidget(frame_2);
+        listWidget->setObjectName(QString::fromUtf8("listWidget"));
+        listWidget->setGeometry(QRect(40, 810, 781, 261));
+        label_15 = new QLabel(frame_2);
+        label_15->setObjectName(QString::fromUtf8("label_15"));
+        label_15->setGeometry(QRect(40, 775, 171, 31));
+        label_15->setFont(font);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -358,7 +352,8 @@ public:
         label_20->setText(QApplication::translate("MainWindow", "\320\222\321\213\320\262\320\265\321\201\321\202\320\270 \321\202\320\276\320\262\320\260\321\200", nullptr));
         label_21->setText(QApplication::translate("MainWindow", "\320\237\321\200\320\276\321\206\320\265\321\201\321\201\321\213", nullptr));
         label_22->setText(QApplication::translate("MainWindow", "\320\232\320\260\321\202\320\265\320\263\320\276\321\200\320\270\321\217", nullptr));
-        label_23->setText(QApplication::translate("MainWindow", "\320\235\320\260\320\267\320\262\320\260\320\275\320\270\320\265", nullptr));
+        sellButton->setText(QApplication::translate("MainWindow", "\320\237\321\200\320\276\320\264\320\260\321\202\321\214", nullptr));
+        label_15->setText(QApplication::translate("MainWindow", "\320\237\321\200\320\276\321\206\320\265\321\201\321\201\321\213", nullptr));
     } // retranslateUi
 
 };
