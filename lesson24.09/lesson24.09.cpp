@@ -6,8 +6,6 @@
 #include "person.h"
 
 
-
-
 vector<string> readFile(string path) {
     vector<string> buf;
     string s;
