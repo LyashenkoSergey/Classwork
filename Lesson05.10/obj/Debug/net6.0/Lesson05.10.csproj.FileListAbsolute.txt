@@ -1,0 +1,15 @@
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson05.10\obj\Debug\net6.0\Lesson05.10.csproj.AssemblyReference.cache
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson05.10\obj\Debug\net6.0\Lesson05.10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson05.10\obj\Debug\net6.0\Lesson05.10.AssemblyInfoInputs.cache
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson05.10\obj\Debug\net6.0\Lesson05.10.AssemblyInfo.cs
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson05.10\obj\Debug\net6.0\Lesson05.10.csproj.CoreCompileInputs.cache
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson05.10\bin\Debug\net6.0\Lesson05.10.exe
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson05.10\bin\Debug\net6.0\Lesson05.10.deps.json
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson05.10\bin\Debug\net6.0\Lesson05.10.runtimeconfig.json
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson05.10\bin\Debug\net6.0\Lesson05.10.dll
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson05.10\bin\Debug\net6.0\ref\Lesson05.10.dll
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson05.10\bin\Debug\net6.0\Lesson05.10.pdb
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson05.10\obj\Debug\net6.0\Lesson05.10.dll
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson05.10\obj\Debug\net6.0\ref\Lesson05.10.dll
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson05.10\obj\Debug\net6.0\Lesson05.10.pdb
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson05.10\obj\Debug\net6.0\Lesson05.10.genruntimeconfig.cache
