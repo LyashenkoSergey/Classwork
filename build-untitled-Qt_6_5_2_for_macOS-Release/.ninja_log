@@ -1,9 +1,0 @@
-# ninja log v5
-0	369	1694248921915389793	untitled_autogen/timestamp	aab04009f0c1cb7e
-0	369	1694248921915389793	untitled_autogen/mocs_compilation.cpp	aab04009f0c1cb7e
-0	369	1694248921915389793	/Users/sergey/Documents/Github/Classwork/build-untitled-Qt_6_5_2_for_macOS-Release/untitled_autogen/timestamp	aab04009f0c1cb7e
-0	369	1694248921915389793	/Users/sergey/Documents/Github/Classwork/build-untitled-Qt_6_5_2_for_macOS-Release/untitled_autogen/mocs_compilation.cpp	aab04009f0c1cb7e
-369	901	1694248922450782700	CMakeFiles/untitled.dir/main.cpp.o	5beae29fa92cb048
-369	903	1694248922452264995	CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.o	a21fc5c6a0a7724c
-369	957	1694248922507662775	CMakeFiles/untitled.dir/mainwindow.cpp.o	82ad3d4ed4e0f93d
-957	1083	1694248922634945660	untitled.app/Contents/MacOS/untitled	632f8eaa22619472

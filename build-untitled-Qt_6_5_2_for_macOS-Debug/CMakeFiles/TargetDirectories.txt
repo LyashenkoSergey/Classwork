@@ -1,9 +1,0 @@
-/Users/sergey/Documents/Github/Classwork/build-untitled-Qt_6_5_2_for_macOS-Debug/CMakeFiles/untitled.dir
-/Users/sergey/Documents/Github/Classwork/build-untitled-Qt_6_5_2_for_macOS-Debug/CMakeFiles/edit_cache.dir
-/Users/sergey/Documents/Github/Classwork/build-untitled-Qt_6_5_2_for_macOS-Debug/CMakeFiles/rebuild_cache.dir
-/Users/sergey/Documents/Github/Classwork/build-untitled-Qt_6_5_2_for_macOS-Debug/CMakeFiles/list_install_components.dir
-/Users/sergey/Documents/Github/Classwork/build-untitled-Qt_6_5_2_for_macOS-Debug/CMakeFiles/install.dir
-/Users/sergey/Documents/Github/Classwork/build-untitled-Qt_6_5_2_for_macOS-Debug/CMakeFiles/install/local.dir
-/Users/sergey/Documents/Github/Classwork/build-untitled-Qt_6_5_2_for_macOS-Debug/CMakeFiles/install/strip.dir
-/Users/sergey/Documents/Github/Classwork/build-untitled-Qt_6_5_2_for_macOS-Debug/CMakeFiles/untitled_autogen_timestamp_deps.dir
-/Users/sergey/Documents/Github/Classwork/build-untitled-Qt_6_5_2_for_macOS-Debug/CMakeFiles/untitled_autogen.dir

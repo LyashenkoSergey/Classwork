@@ -1,0 +1,36 @@
+Типы команд SQL
+1) DDL (Data Definition Language)
+Язык определения данных
+(определение структур хранящихся в базе)
+- CREATE
+- DROP
+- ALTER
+- TRUCATE
+
+2)DML (Data Manipulation Language)
+- SELECT
+	(Примеры команд. Все команды пишутся заглавными буквами, а название таблиц и столбцов так как при создании)
+
+	SELECT * FROM ...; (SELECT * FROM Employ;) - Показ всей таблицы
+	SELECT * FROM (Название таблицы) WHERE (Выборка из таблицы)... ; - выборка из таблицы по значению. (SELECT * FROM Employ WHERE id_employ=5;)
+	SELECT * FROM Employ WHERE room=23 AND salary>10000; /*выборка из таблицы по двойному значению*/
+	SELECT * FROM Employ WHERE salary IS NOT NULL; выборка из таблицы где столбец не NULL
+	SELECT DISTINCT room from  Employ; /*Уникальные значения*/
+	SELECT * FROM Employ ORDER BY salary; /*отсортировать по столбцу*/
+	SELECT * FROM Employ ORDER BY salary DESC; /*отсортировать по столбцу по убыванию*/
+	SELECT TOP 2 * FROM Employ; /*Вывод 2 верхних*/
+
+
+- DELETE
+- UPDATE
+- INSERT
+- MERGE
+
+3) dcl (Data Control Language)
+- GRANT
+- REVOKE
+
+4) TCL (Transaction Control Language)
+- COMMIT
+- ROLLBACK
+- SAVEPOINT
