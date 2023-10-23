@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "XGNAJcrh2H49yMpkNziMXsxdHPqHqkxy8XbBd/JJz97cdMsupOUmtTFAE4CAwO9UtdHV4+0lerEkVVdV/LTocg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Взрослая академия\\Documents\\Lyashenko\\Classwork\\Lesson23.10\\Lesson23.10.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Взрослая академия\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\Взрослая академия\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
