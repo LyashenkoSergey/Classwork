@@ -7,10 +7,13 @@
 const int Length = 900;
 const int Height = 900;
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> refs/remotes/origin/master
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode(Length, Height), "SFML");
@@ -73,12 +76,31 @@ int main()
 					flag = false;
 				}
 			}
+<<<<<<< HEAD
 
 			
 
 
 
 
+=======
+			if (event.type == sf::Event::MouseButtonPressed) {
+				if (event.mouseButton.button == sf::Mouse::Left) {
+					sf::Vector2f mousePosition(event.mouseButton.x, event.mouseButton.y);
+					for (auto it = balls.begin(); it != balls.end(); ++it) {
+						if (it->getGlobalBounds().contains(sf::Vector2f(mousePosition))) {
+							it = balls.erase(it);
+							for (; it != balls.end(); ++it) {
+								int x = (it - balls.begin()) % shapeCountX;
+								int y = (it - balls.begin()) / shapeCountY;
+								it->setPosition(x * shapeSize*2, y * shapeSize*2);
+							}
+							break;
+						}
+					}
+				}
+			}
+>>>>>>> refs/remotes/origin/master
 		}
 		window.clear();
 		for (auto i:balls) {

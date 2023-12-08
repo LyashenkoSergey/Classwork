@@ -1,0 +1,15 @@
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson02.11\bin\Debug\net6.0\Lesson02.11.exe
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson02.11\bin\Debug\net6.0\Lesson02.11.deps.json
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson02.11\bin\Debug\net6.0\Lesson02.11.runtimeconfig.json
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson02.11\bin\Debug\net6.0\Lesson02.11.dll
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson02.11\bin\Debug\net6.0\ref\Lesson02.11.dll
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson02.11\bin\Debug\net6.0\Lesson02.11.pdb
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson02.11\obj\Debug\net6.0\Lesson02.11.csproj.AssemblyReference.cache
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson02.11\obj\Debug\net6.0\Lesson02.11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson02.11\obj\Debug\net6.0\Lesson02.11.AssemblyInfoInputs.cache
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson02.11\obj\Debug\net6.0\Lesson02.11.AssemblyInfo.cs
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson02.11\obj\Debug\net6.0\Lesson02.11.csproj.CoreCompileInputs.cache
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson02.11\obj\Debug\net6.0\Lesson02.11.dll
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson02.11\obj\Debug\net6.0\ref\Lesson02.11.dll
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson02.11\obj\Debug\net6.0\Lesson02.11.pdb
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson02.11\obj\Debug\net6.0\Lesson02.11.genruntimeconfig.cache

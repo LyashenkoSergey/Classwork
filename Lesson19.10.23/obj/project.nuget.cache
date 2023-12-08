@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "31TKKckTtgpoSipqTr5qQJHFCOBR0ZYzGqoUpBpiz6opZ+rttmUWe43d1aBnEkJbomNfTzXspBHOH9QOAAOtqA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Взрослая академия\\Documents\\Lyashenko\\Classwork\\Lesson19.10.23\\Lesson19.10.23.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Взрослая академия\\.nuget\\packages\\microsoft.aspnetcore.authentication.negotiate\\6.0.0\\microsoft.aspnetcore.authentication.negotiate.6.0.0.nupkg.sha512",
+    "C:\\Users\\Взрослая академия\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\6.0.0\\microsoft.aspnetcore.connections.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Взрослая академия\\.nuget\\packages\\microsoft.extensions.features\\6.0.0\\microsoft.extensions.features.6.0.0.nupkg.sha512",
+    "C:\\Users\\Взрослая академия\\.nuget\\packages\\system.directoryservices.protocols\\6.0.0\\system.directoryservices.protocols.6.0.0.nupkg.sha512",
+    "C:\\Users\\Взрослая академия\\.nuget\\packages\\system.io.pipelines\\6.0.0\\system.io.pipelines.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

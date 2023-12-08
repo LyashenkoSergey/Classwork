@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+# Catalog
+.vs/
+x64/
+
+>>>>>>> refs/remotes/origin/master
 # Prerequisites
 *.d
 
