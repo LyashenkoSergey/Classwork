@@ -1,0 +1,3 @@
+﻿  LiteWeight.cpp
+C:\Users\938-8\OneDrive\Документы\Github\HomeWork\LiteWeight\LiteWeight.cpp(87,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  LiteWeight.vcxproj -> C:\Users\938-8\OneDrive\Документы\Github\HomeWork\LiteWeight\x64\Debug\LiteWeight.exe
