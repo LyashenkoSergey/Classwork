@@ -1,0 +1,11 @@
+C:\Users\938-8\OneDrive\Документы\Github\HomeWork\DZ16.12.23\bin\Debug\DZ16.12.23.exe.config
+C:\Users\938-8\OneDrive\Документы\Github\HomeWork\DZ16.12.23\bin\Debug\DZ16.12.23.exe
+C:\Users\938-8\OneDrive\Документы\Github\HomeWork\DZ16.12.23\bin\Debug\DZ16.12.23.pdb
+C:\Users\938-8\OneDrive\Документы\Github\HomeWork\DZ16.12.23\obj\Debug\DZ16.12.23.csproj.AssemblyReference.cache
+C:\Users\938-8\OneDrive\Документы\Github\HomeWork\DZ16.12.23\obj\Debug\DZ16.12.23.csproj.SuggestedBindingRedirects.cache
+C:\Users\938-8\OneDrive\Документы\Github\HomeWork\DZ16.12.23\obj\Debug\DZ16._12._23.Form1.resources
+C:\Users\938-8\OneDrive\Документы\Github\HomeWork\DZ16.12.23\obj\Debug\DZ16._12._23.Properties.Resources.resources
+C:\Users\938-8\OneDrive\Документы\Github\HomeWork\DZ16.12.23\obj\Debug\DZ16.12.23.csproj.GenerateResource.cache
+C:\Users\938-8\OneDrive\Документы\Github\HomeWork\DZ16.12.23\obj\Debug\DZ16.12.23.csproj.CoreCompileInputs.cache
+C:\Users\938-8\OneDrive\Документы\Github\HomeWork\DZ16.12.23\obj\Debug\DZ16.12.23.exe
+C:\Users\938-8\OneDrive\Документы\Github\HomeWork\DZ16.12.23\obj\Debug\DZ16.12.23.pdb
