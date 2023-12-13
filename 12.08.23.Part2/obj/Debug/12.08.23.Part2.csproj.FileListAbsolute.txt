@@ -1,0 +1,11 @@
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\12.08.23.Part2\bin\Debug\12.08.23.Part2.exe.config
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\12.08.23.Part2\bin\Debug\12.08.23.Part2.exe
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\12.08.23.Part2\bin\Debug\12.08.23.Part2.pdb
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\12.08.23.Part2\obj\Debug\12.08.23.Part2.csproj.AssemblyReference.cache
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\12.08.23.Part2\obj\Debug\12.08.23.Part2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\12.08.23.Part2\obj\Debug\_12._08._23.Part2.Quastion.resources
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\12.08.23.Part2\obj\Debug\_12._08._23.Part2.Properties.Resources.resources
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\12.08.23.Part2\obj\Debug\12.08.23.Part2.csproj.GenerateResource.cache
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\12.08.23.Part2\obj\Debug\12.08.23.Part2.csproj.CoreCompileInputs.cache
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\12.08.23.Part2\obj\Debug\12.08.23.Part2.exe
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\12.08.23.Part2\obj\Debug\12.08.23.Part2.pdb
