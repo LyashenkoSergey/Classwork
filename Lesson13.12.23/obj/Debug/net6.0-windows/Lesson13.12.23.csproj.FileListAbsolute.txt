@@ -1,0 +1,17 @@
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson13.12.23\bin\Debug\net6.0-windows\Lesson13.12.23.exe
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson13.12.23\bin\Debug\net6.0-windows\Lesson13.12.23.deps.json
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson13.12.23\bin\Debug\net6.0-windows\Lesson13.12.23.runtimeconfig.json
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson13.12.23\bin\Debug\net6.0-windows\Lesson13.12.23.dll
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson13.12.23\bin\Debug\net6.0-windows\ref\Lesson13.12.23.dll
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson13.12.23\bin\Debug\net6.0-windows\Lesson13.12.23.pdb
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson13.12.23\obj\Debug\net6.0-windows\Lesson13.12.23.csproj.AssemblyReference.cache
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson13.12.23\obj\Debug\net6.0-windows\Lesson13.12.23.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson13.12.23\obj\Debug\net6.0-windows\Lesson13.12.23.AssemblyInfoInputs.cache
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson13.12.23\obj\Debug\net6.0-windows\Lesson13.12.23.AssemblyInfo.cs
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson13.12.23\obj\Debug\net6.0-windows\Lesson13.12.23.csproj.CoreCompileInputs.cache
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson13.12.23\obj\Debug\net6.0-windows\Lesson13.12.23.dll
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson13.12.23\obj\Debug\net6.0-windows\ref\Lesson13.12.23.dll
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson13.12.23\obj\Debug\net6.0-windows\Lesson13.12.23.pdb
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson13.12.23\obj\Debug\net6.0-windows\Lesson13.12.23.genruntimeconfig.cache
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson13.12.23\obj\Debug\net6.0-windows\Lesson13._12._23.Form1.resources
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson13.12.23\obj\Debug\net6.0-windows\Lesson13.12.23.csproj.GenerateResource.cache

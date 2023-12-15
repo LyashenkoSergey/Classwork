@@ -1,0 +1,11 @@
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson08.12.23.WinForms\bin\Debug\Lesson08.12.23.WinForms.exe.config
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson08.12.23.WinForms\bin\Debug\Lesson08.12.23.WinForms.exe
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson08.12.23.WinForms\bin\Debug\Lesson08.12.23.WinForms.pdb
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson08.12.23.WinForms\obj\Debug\Lesson08.12.23.WinForms.csproj.AssemblyReference.cache
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson08.12.23.WinForms\obj\Debug\Lesson08.12.23.WinForms.csproj.SuggestedBindingRedirects.cache
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson08.12.23.WinForms\obj\Debug\Lesson08._12._23.WinForms.Properties.Resources.resources
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson08.12.23.WinForms\obj\Debug\Lesson08.12.23.WinForms.csproj.GenerateResource.cache
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson08.12.23.WinForms\obj\Debug\Lesson08.12.23.WinForms.csproj.CoreCompileInputs.cache
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson08.12.23.WinForms\obj\Debug\Lesson08.12.23.WinForms.exe
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson08.12.23.WinForms\obj\Debug\Lesson08.12.23.WinForms.pdb
+C:\Users\Взрослая академия\Documents\Lyashenko\Classwork\Lesson08.12.23.WinForms\obj\Debug\Lesson08._12._23.WinForms.Form1.resources

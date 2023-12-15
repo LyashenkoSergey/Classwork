@@ -7,6 +7,13 @@
 const int Length = 900;
 const int Height = 900;
 
+<<<<<<< HEAD
+
+
+
+
+=======
+>>>>>>> refs/remotes/origin/master
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode(Length, Height), "SFML");
@@ -69,6 +76,14 @@ int main()
 					flag = false;
 				}
 			}
+<<<<<<< HEAD
+
+			
+
+
+
+
+=======
 			if (event.type == sf::Event::MouseButtonPressed) {
 				if (event.mouseButton.button == sf::Mouse::Left) {
 					sf::Vector2f mousePosition(event.mouseButton.x, event.mouseButton.y);
@@ -85,6 +100,7 @@ int main()
 					}
 				}
 			}
+>>>>>>> refs/remotes/origin/master
 		}
 		window.clear();
 		for (auto i:balls) {
