@@ -1,0 +1,11 @@
+C:\Users\938-8\OneDrive\Документы\Github\Classwork\Lesson15.12.23\bin\Debug\Lesson15.12.23.exe.config
+C:\Users\938-8\OneDrive\Документы\Github\Classwork\Lesson15.12.23\bin\Debug\Lesson15.12.23.exe
+C:\Users\938-8\OneDrive\Документы\Github\Classwork\Lesson15.12.23\bin\Debug\Lesson15.12.23.pdb
+C:\Users\938-8\OneDrive\Документы\Github\Classwork\Lesson15.12.23\obj\Debug\Lesson15.12.23.csproj.AssemblyReference.cache
+C:\Users\938-8\OneDrive\Документы\Github\Classwork\Lesson15.12.23\obj\Debug\Lesson15.12.23.csproj.SuggestedBindingRedirects.cache
+C:\Users\938-8\OneDrive\Документы\Github\Classwork\Lesson15.12.23\obj\Debug\Lesson15._12._23.Form1.resources
+C:\Users\938-8\OneDrive\Документы\Github\Classwork\Lesson15.12.23\obj\Debug\Lesson15._12._23.Properties.Resources.resources
+C:\Users\938-8\OneDrive\Документы\Github\Classwork\Lesson15.12.23\obj\Debug\Lesson15.12.23.csproj.GenerateResource.cache
+C:\Users\938-8\OneDrive\Документы\Github\Classwork\Lesson15.12.23\obj\Debug\Lesson15.12.23.csproj.CoreCompileInputs.cache
+C:\Users\938-8\OneDrive\Документы\Github\Classwork\Lesson15.12.23\obj\Debug\Lesson15.12.23.exe
+C:\Users\938-8\OneDrive\Документы\Github\Classwork\Lesson15.12.23\obj\Debug\Lesson15.12.23.pdb
